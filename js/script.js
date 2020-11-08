@@ -37,4 +37,3 @@ form.addEventListener('submit', (evt) => {
   addMessage(username, usermessage);
   form.reset();
 })
-
