@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messenger</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <p class="title">Hello!</p>
+      <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit unde, temporibus cumque nostrum
+        labore voluptate debitis aut, nesciunt eum consequatur, at delectus nihil repudiandae harum quo minus ipsum
+        architecto vel.</p>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Messages</h1>
+      <section class="messages">
+        <h2 class="visually-hidden">Messages list</h2>
+        <!-- <div class="message">
+          <img class="message__img" src="https://via.placeholder.com/80" alt="user photo" width="80" height="80">
+          <p class="message__username">User Name</p>
+          <button class="message__del" type="button" aria-label="delete message"></button>
+          <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel blanditiis, possimus
+            nulla incidunt quaerat asperiores qui error, consequatur porro, nemo sint aliquam ea</p>
+          <time class="message__date" datetime="2020-11-08T12:28">2 days ago...</time>
+        </div> -->
+      </section>
+      <section class="form">
+        <h2 class="visually-hidden">Send message form</h2>
+        <form action="#" method="GET">
+          <label>
+            <span class="form__label">Username: </span>
+            <input class="form__input" name="username" type="text" placeholder="Ivan Ivanych" required minlength="2"
+              maxlength="20">
+          </label>
+          <label>
+            <span class="form__label">Message: </span>
+            <textarea class="form__textarea" name="usermessage" required maxlength="100"
+              placeholder="type your message..."></textarea>
+          </label>
+          <div class="form__btns">
+            <button class="form__btn form__btn--reset" type="reset">Clear</button>
+            <button class="form__btn" type="submit">Send</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <template id="msg">
+    <div class="message">
+      <img class="message__img" src="https://via.placeholder.com/80" alt="user photo" width="80" height="80">
+      <p class="message__username"></p>
+      <button class="message__del" type="button" aria-label="delete message"></button>
+      <p class="message__text"></p>
+      <time class="message__date" datetime=""></time>
+    </div>
+  </template>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
